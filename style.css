@@ -1,0 +1,229 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* -------the heading part of my webpage----- */
+.navbar{
+ display:flex;
+ justify-content: space-between;
+ align-items: center;
+ margin:0px 5px 5px 0px;
+ padding:20px 40px 20px 10px;
+ width:100%;
+ top:0;
+ font-family:monospace;
+ position:fixed;
+ background-color: white ;
+ height:60px;
+ z-index:3;
+ 
+}
+
+.navbar p{
+  font-size: 22px;
+}
+.navbar p span{
+  font-weight: bolder;
+}
+.navbar a{
+  text-decoration: none;
+  color: black;
+  list-style: none;
+}
+.flexbox-1 ul{
+  display:flex;
+  justify-content: space-between;
+  gap:100px;
+  list-style: none;
+}
+.flexbox-1 ul a{
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+
+/* ----this is the body or the main part of my webpage---- */
+.background{
+  /* position:relative; */
+}
+.background img{
+  width:auto;
+  height:auto;
+  max-width:100%;
+  height:100%;
+  /* position:relative; */
+  /* margin:80px 0px 10px 0px; */
+  
+}
+.background-words{
+  font-size:50px;
+  position:absolute;
+  /* position:relative; */
+  left: 40%;
+  top:60%;
+  color: whitesmoke;
+}
+.background-words .br{
+  border:4px solid black;
+  background-color: black;
+  text-align: center;
+  opacity:0.6; 
+}
+
+/* -------the projects part of my webpage---- */
+
+.titles{
+  font-size: 25px;
+  margin: 20px 25px 5px 25px;
+}
+.flexbox-2{
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0,1fr));
+  column-gap: 25px;
+  /* margin:20px 25px 5px 25px; */
+}
+.flexhouse img{
+  width: auto;
+  height:auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.flexhouse{
+  position:relative;
+  width:100%;
+}
+.flexhouse-words {
+  position:absolute;
+  top:0;
+  background-color: black;
+  color: whitesmoke;
+  border: 10px solid black;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* ---the about me part of my webpage----- */
+.border{
+  margin:20px 25px 20px 5px;
+  opacity:0.2;
+}
+.aboutme p{
+  font-size: 20px;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  text-align: start;
+  line-height: 1.5;
+}
+
+/* -----the people flexbox part------- */
+.flexbox-3{
+  display:grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  column-gap: 20px;
+  margin-top:30px;
+}
+
+.wholepackage img{
+   width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
+  filter: grayscale(90%);
+}
+.packagewords{
+  font-size:20px;
+  /* margin:5px 0px 30px 5px; */
+  padding:10px 0px 0px 0px;
+  width:100%;
+}
+.packagewords h3, h4{
+  line-height: 2;
+  opacity:0.8;
+}
+.packagewords h4{
+  opacity: 0.5;
+}
+.flexcontact{
+  background-color: darkgray;
+  text-align: center;
+  border:4px solid darkgray;
+  margin-top:15px;
+
+}
+.flexcontact:hover{
+  background-color: aqua;
+  transition: 0.2s;
+}
+
+/* ----------the footer part of my webpage------ */
+
+.contact-form input{
+  padding:10px;
+  width:100%;
+  margin-bottom:8px;
+  opacity:0.3;
+}
+.name{
+  margin-top:20px;
+}
+.button{
+  background-color: black;
+  color: whitesmoke;
+  border:15px solid black;
+  margin:20px 0px 20px 0px;
+}
+button:hover{
+  background-color:rgb(59, 161, 127);
+  transition: 0.1s;
+  border:15px solid rgb(59, 161, 127);
+}
+.footer-image img{
+  width:100%;
+}
+.footer-powered {
+  background-color: black;
+  color: whitesmoke;
+  border:20px solid black;
+  text-align: center;
+}
+.footer-powered span{
+  text-decoration: underline;
+}
+
+/* -------responsiveness of my website----- */
+@media (max-width:900px){
+
+  .hidden{
+    visibility: hidden;
+  } 
+   .background-words{
+    top:18vh;
+  }
+
+  .home {
+    text-wrap: nowrap;
+  }
+  .flexbox-1{
+    visibility: hidden;
+  }
+  .flexbox-3{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .flexbox-2 {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+  }
+}
+@media (min-width:901px) and (max-width:1439px){
+  .background-words{
+    top:40vh;
+  }
+  .background-words{
+    top:50vh;
+  }
+  
+}
